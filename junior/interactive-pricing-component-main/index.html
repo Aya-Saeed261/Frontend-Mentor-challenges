@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <!-- Main style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <div class="heading-holder">
+    <h1 class="main-heading">Simple, traffic-based pricing</h1>
+    <p class="info">Sign-up for our 30-day trial. No credit card required.</p>
+  </div>
+  <div class="content">
+    <div class="interactive-part">
+      <div class="pricing-info">
+        <div class="views"><span class="num">100K</span> Pageviews</div>
+        <div class="price"><span class="cost">$16.00</span> <span>/ month</span></div>
+        <div class="slider-container">
+          <input type="range" name="prices" class="slider" min="0" max="4" value="2" aria-label="price slider">
+        </div>
+      </div>
+      <div class="sub-plan">
+        <div>Monthly Billing</div>
+        <div class="toggler"><span class="toggler-controler"></span></div>
+        <div>Yearly Billing <span class="discount"><span class="show-in-mobile">-</span>25%<span class="hide-in-mobile">
+              discount</span></span></div>
+      </div>
+    </div>
+    <div class="trial-info">
+      <ul class="benefits">
+        <li class="benefit">
+          <img src="images/icon-check.svg" alt="icon">
+          <p>Unlimited websites</p>
+        </li>
+        <li class="benefit">
+          <img src="images/icon-check.svg" alt="icon">
+          <p>100% data ownership</p>
+        </li>
+        <li class="benefit">
+          <img src="images/icon-check.svg" alt="icon">
+          <p>Email reports</p>
+        </li>
+      </ul>
+      <a href="#" class="start-trial">Start my trial</a>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+/* GLobal style */
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram-from: hsl(37, 97%, 70%);
+  --instagram-to: hsl(329, 70%, 58%);
+  --youTube: hsl(348, 97%, 39%);
+
+  /* Light theme */
+  --toggle-from: hsl(230, 22%, 74%);
+  --toggle-to: hsl(230, 22%, 74%);
+  --bg: hsl(0, 0%, 100%);
+  --top-bg-pattern: hsl(225, 100%, 98%);
+  --card-bg: hsl(227, 47%, 96%);
+  --card-bg-hover: hsl(227, 47%, 92%);
+  --secondary-text: hsl(228, 12%, 44%);
+  --main-text: hsl(230, 17%, 14%);
+}
+
+.increase {
+  color: var(--lime-green);
+}
+
+.decrease {
+  color: var(--bright-red);
+}
+
+.box {
+  background-color: var(--card-bg);
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.box:hover {
+  background-color: var(--card-bg-hover);
+}
+
+/* Typography */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+/* Main */
+body {
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--bg);
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 30%;
+  background-color: var(--top-bg-pattern);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 0 0 25px 25px;
+}
+
+@media (max-width: 767px) {
+  body::before {
+    content: "";
+    width: 100%;
+    height: 10%;
+    background-color: var(--top-bg-pattern);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 20px 50px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.top-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .top-holder {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.top-holder .main-title {
+  color: var(--main-text);
+}
+
+.top-holder .total-followers {
+  color: var(--secondary-text);
+  font-weight: bold;
+}
+
+.top-holder .theme {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  color: var(--secondary-text);
+}
+
+@media (max-width: 767px) {
+  .top-holder .theme {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid var(--secondary-text);
+    padding-top: 20px;
+  }
+}
+
+.toggler-container {
+  height: 23px;
+  width: 47px;
+  padding: 2px;
+  background: linear-gradient(to right, var(--toggle-from), var(--toggle-to));
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggler-container:hover {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.toggler {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: var(--bg);
+  position: absolute;
+  top: 2px;
+  left: calc(100% - 21px);
+  transition: 0.3s;
+}
+
+.toggler.toggled {
+  left: 2px;
+}
+
+.followers-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.followers-info {
+  text-align: center;
+  border-top: 4px solid transparent;
+}
+
+.followers-info.facebook {
+  border-top-color: var(--facebook);
+}
+
+.followers-info.twitter {
+  border-top-color: var(--twitter);
+}
+
+.followers-info.instagram {
+  position: relative;
+}
+
+.followers-info.instagram::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(
+    to right,
+    var(--instagram-from),
+    var(--instagram-to)
+  );
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+.followers-info.youtube {
+  border-top-color: var(--youTube);
+}
+
+.followers-info .user-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.followers-info .user-name .name {
+  color: var(--secondary-text);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.followers-info .number {
+  color: var(--main-text);
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.followers-info .title {
+  letter-spacing: 4px;
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.followers-info .today-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.overview .main-title {
+  color: var(--secondary-text);
+  margin-bottom: 25px;
+}
+
+.overview .holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.overview .holder .stats-holder .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.overview .holder .stats-holder .heading .title {
+  color: var(--secondary-text);
+  font-size: 14px;
+}
+
+.overview .holder .stats-holder .stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overview .holder .stats-holder .stats .number {
+  color: var(--main-text);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.overview .holder .stats-holder .stats .percentage {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.overview .holder .stats-holder .stats .percentage .value {
+  font-weight: bold;
+  font-size: 11px;
+}

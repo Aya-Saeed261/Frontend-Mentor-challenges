@@ -1,0 +1,140 @@
+/* GLobal style */
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-gray: hsl(0, 0%, 59%);
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+}
+
+/* Typography */
+
+.name,
+.stat {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Main */
+.container {
+  background-color: var(--dark-cyan);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.card {
+  width: 325px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+}
+
+.bg-top {
+  position: absolute;
+  left: -256%;
+  top: -205%;
+  z-index: -1;
+}
+
+.bg-bottom {
+  position: absolute;
+  right: -256%;
+  bottom: -205%;
+  z-index: -1;
+}
+
+.card-header {
+  height: 104px;
+  background-image: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.user-img {
+  display: block;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: 0 auto;
+  transform: translateY(50%);
+}
+
+.user-info {
+  margin-top: 72px;
+}
+
+.name-age,
+.address {
+  text-align: center;
+}
+
+.name {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+}
+
+.age {
+  color: var(--dark-grayish-blue);
+}
+
+.address {
+  color: var(--dark-grayish-blue);
+  font-size: 14px;
+  margin: 5px 0 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 15px 30px;
+}
+
+.stats div span {
+  display: block;
+  text-align: center;
+}
+
+.stat {
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.title {
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  justify-self: baseline;
+  color: var(--White);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}

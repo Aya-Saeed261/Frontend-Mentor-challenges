@@ -1,0 +1,260 @@
+/* GLobal style */
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+/* Typography */
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Main */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
+
+.left-holder {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .left-holder {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 991px) {
+  .left-holder {
+    margin-top: 50px;
+  }
+}
+
+.text {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .text {
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .text {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+
+  .smaller-screens {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .lg-screens {
+    display: none;
+  }
+
+  .logo {
+    width: 180px;
+    padding: 30px;
+  }
+}
+
+.title {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--dark-grayish-red);
+  letter-spacing: 10px;
+}
+
+.title span {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+.description {
+  color: var(--desaturated-red);
+  line-height: 1.5;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+form {
+  border: 1px solid var(--desaturated-red);
+  border-radius: 25px;
+  height: 40px;
+  margin-top: 35px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  form {
+    height: 50px;
+  }
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+form.require-change {
+  border: 2px solid var(--soft-red);
+}
+
+.user-email {
+  height: 100%;
+  width: 80%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+
+.user-email::placeholder {
+  color: var(--desaturated-red);
+}
+
+.user-email:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+}
+
+.subscribe {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  height: 100%;
+  width: 20%;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px 2px var(--desaturated-red);
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.subscribe:hover {
+  background: linear-gradient(135deg, hsl(0, 80%, 90%), hsl(0, 74%, 87%));
+}
+
+.error-logo {
+  position: absolute;
+  top: 50%;
+  right: calc(20% + 10px);
+  transform: translateY(-50%) scale(0);
+  width: 20px;
+  transition: 0.3s;
+}
+
+form.require-change .error-logo {
+  transform: translateY(-50%) scale(100%);
+}
+
+.changes {
+  color: var(--soft-red);
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 20px;
+  transform: scale(0);
+  transition: 0.3s;
+  overflow: hidden;
+  text-align: start;
+}
+
+form.require-change .changes {
+  transform: scale(100%);
+}
+
+.hero {
+  width: 38%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  justify-self: baseline;
+  color: black;
+  padding: 10px;
+}
+
+.attribution a {
+  color: var(--desaturated-red);
+  text-decoration: none;
+}

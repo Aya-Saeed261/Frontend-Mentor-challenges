@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- Main style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Project tracking intro component</title>
+</head>
+
+<body>
+  <section class="landing">
+    <div class="container">
+      <header class="main-header">
+        <img src="images/logo.svg" alt="logo" class="logo">
+        <button class="header-menu-btn show-in-mobile" aria-label="menu">
+          <img src="images/icon-hamburger.svg" alt="icon" class="icon">
+          <img src="images/icon-close.svg" alt="icon" class="icon hide">
+        </button>
+        <div class="header-menu hidden">
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="#" class="nav-link">Product</a></li>
+              <li><a href="#" class="nav-link">Features</a></li>
+              <li><a href="#" class="nav-link">Pricing</a></li>
+            </ul>
+          </nav>
+          <button class="login-btn"><a href="#" class="link">Login</a></button>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="content">
+          <p class="announcement"><span class="new">New</span> Monograph Dashboard</p>
+          <h1 class="main-title">Powerful insights into your team</h1>
+          <p class="description">Project planning and time tracking for agile teams</p>
+          <div class="holder">
+            <button class="schedule-btn"><a href="#" class="link">Schedule a demo</a></button>
+            <p class="description">to see a preview</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="images/illustration-devices.svg" alt="illustration">
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

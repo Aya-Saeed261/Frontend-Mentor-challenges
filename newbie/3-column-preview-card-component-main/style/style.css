@@ -1,0 +1,124 @@
+/* GLobal style */
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* Typography */
+
+p,
+button {
+  font-size: 15px;
+}
+
+body,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+/* Main */
+
+body {
+  background-color: var(--very-light-gray);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 40px;
+  height: 460px;
+  position: relative;
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.car-type {
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  margin: 25px 0;
+  font-size: 32px;
+}
+
+.description {
+  color: var(--transparent-white);
+  line-height: 1.8;
+}
+
+.learn-more {
+  text-transform: capitalize;
+  background-color: var(--very-light-gray);
+  border: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  transition: 0.3s;
+  border: 2px solid var(--very-light-gray);
+}
+
+.sedan .learn-more {
+  color: var(--bright-orange);
+}
+
+.suv .learn-more {
+  color: var(--dark-cyan);
+}
+
+.luxury .learn-more {
+  color: var(--very-dark-cyan);
+}
+
+.learn-more:hover {
+  background-color: transparent;
+  color: var(--very-light-gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  justify-self: baseline;
+  color: var(--White);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}

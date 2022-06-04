@@ -1,0 +1,154 @@
+/* GLobal style */
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: hsl(233, 47%, 7%);
+  --card-bg: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+
+/* Typography */
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Main */
+
+body {
+  background-color: var(--main-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 50px 20px;
+}
+
+.card {
+  max-width: 900px;
+  min-height: 400px;
+  background-color: var(--card-bg);
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .card {
+    flex-direction: column-reverse;
+  }
+}
+
+.info {
+  padding: 30px 60px;
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  .info {
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
+
+.title {
+  color: var(--white);
+}
+
+.title span {
+  color: var(--soft-violet);
+}
+
+.description {
+  color: var(--main-paragraph);
+  font-size: 13px;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .stats {
+    gap: 76px;
+  }
+}
+
+@media (max-width: 991px) {
+  .stats {
+    justify-content: space-around;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .stats {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+}
+
+.stat .number {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.stat .heading {
+  color: var(--stat-heading);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+@media (min-width: 992px) {
+  .image-holder {
+    width: 50%;
+    height: 400px;
+    background: var(--soft-violet) url("../images/image-header-desktop.jpg");
+  }
+}
+
+@media (max-width: 991px) {
+  .image-holder {
+    width: 100%;
+    height: 250px;
+    background: var(--soft-violet) url("../images/image-header-mobile.jpg");
+  }
+}
+
+.image-holder {
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  justify-self: baseline;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--soft-violet);
+  text-decoration: none;
+}

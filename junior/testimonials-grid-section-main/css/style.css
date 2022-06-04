@@ -1,0 +1,194 @@
+/* GLobal style */
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --moderate-violet: hsl(263, 55%, 52%);
+  --light-gray: hsl(0, 0%, 81%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Typography */
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+/* Main */
+body {
+  min-height: 100vh;
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 15px 15px;
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.card {
+  padding: 25px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card:first-of-type {
+  background-color: var(--moderate-violet);
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .card:first-of-type {
+    grid-column: span 2;
+  }
+}
+
+.card:nth-of-type(2) {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card:nth-of-type(3),
+.card:nth-of-type(4) {
+  background-color: var(--white);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card:nth-of-type(3) {
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .card:nth-of-type(3) {
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .card:nth-of-type(3) {
+    order: 5;
+  }
+}
+
+.card:nth-of-type(5) {
+  background-color: var(--very-dark-blackish-blue);
+}
+
+@media (min-width: 768px) {
+  .card:nth-of-type(5) {
+    grid-column: span 2;
+  }
+}
+
+.quote-img {
+  position: absolute;
+  right: 15%;
+  top: 0;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .quote-img {
+    right: 7%;
+  }
+}
+
+.card .user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.card .user-info .pic {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.card:nth-of-type(1) .user-info .text-holder,
+.card:nth-of-type(2) .user-info .text-holder,
+.card:nth-of-type(5) .user-info .text-holder,
+.card:nth-of-type(1) .review .description,
+.card:nth-of-type(2) .review .description,
+.card:nth-of-type(5) .review .description {
+  color: var(--light-gray);
+}
+
+.card:nth-of-type(3) .user-info .text-holder,
+.card:nth-of-type(4) .user-info .text-holder {
+  color: var(--very-dark-blackish-blue);
+}
+
+.card .user-info .text-holder p:last-of-type {
+  opacity: 50%;
+}
+
+.card:nth-of-type(3),
+.card:nth-of-type(4) {
+  background-color: var(--white);
+}
+
+.card .review .heading {
+  font-weight: 500;
+}
+
+.card:nth-of-type(1) .review,
+.card:nth-of-type(2) .review,
+.card:nth-of-type(5) .review {
+  color: var(--white);
+}
+
+.card:nth-of-type(3) .review .heading,
+.card:nth-of-type(4) .review .heading {
+  color: var(--very-dark-blackish-blue);
+}
+
+.card:nth-of-type(3) .review .description,
+.card:nth-of-type(4) .review .description {
+  color: var(--very-dark-grayish-blue);
+}
+
+.card .review .description {
+  opacity: 70%;
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+  .card .review .description {
+    line-height: 1.7;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Main style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+
+<body>
+  <div class="card">
+    <p class="advice-number">Advice #<span class="number"></span></p>
+    <div class="advice-container">
+      <p class="advice"></p>
+      <div class="spinner-container hide">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <div class="pause-icon-holder">
+      <i class="fa-solid fa-circle-pause pause-icon"></i>
+    </div>
+    <button type="button" class="new-advice" aria-label="new advice">
+      <i class="fa-solid fa-dice-five"></i>
+    </button>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

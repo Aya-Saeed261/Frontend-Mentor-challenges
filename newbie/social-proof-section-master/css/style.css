@@ -1,0 +1,300 @@
+/* GLobal style */
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Typography */
+
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+/* Main */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 50px 20px 15px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 15px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.bg-top {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.bg-top.desktop {
+  width: 30%;
+  left: -15px;
+}
+
+.bg-top.mobile {
+  width: 100%;
+  left: 0;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.bg-bottom.desktop {
+  width: 80%;
+  right: -15px;
+}
+
+.bg-bottom.mobile {
+  width: 100%;
+  right: 0;
+}
+
+@media (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  .info {
+    flex-direction: column;
+  }
+}
+
+.info .text-holder {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .info .text-holder {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.info .text-holder .title {
+  width: 70%;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .info .text-holder .title {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.info .text-holder .description {
+  color: var(--dark-grayish-magenta);
+  margin-top: 15px;
+}
+
+.info .ratings {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 991px) {
+  .info .ratings {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.info .ratings .rating {
+  width: 70%;
+  background-color: var(--light-grayish-magenta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+@media (min-width: 992px) {
+  .info .ratings .rating:last-of-type {
+    align-self: flex-end;
+  }
+
+  .info .ratings .rating:nth-of-type(2) {
+    align-self: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .info .ratings .rating {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .info .ratings .rating {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.info .ratings .rating .stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 991px) {
+  .info .ratings .rating .stars {
+    gap: 8px;
+  }
+}
+
+.info .ratings .rating .stars img {
+  width: 13px;
+}
+
+@media (max-width: 991px) {
+  .info .ratings .rating .stars img {
+    width: 16px;
+  }
+}
+
+.info .ratings .rating .rating-info {
+  color: var(--very-dark-magenta);
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 992px) {
+  .reviews {
+    height: 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .reviews {
+    flex-direction: column;
+  }
+}
+
+.reviews .review {
+  background-color: var(--very-dark-magenta);
+  padding: 25px;
+  border-radius: 9px;
+}
+
+@media (min-width: 992px) {
+  .reviews .review:first-of-type {
+    align-self: flex-start;
+  }
+
+  .reviews .review:last-of-type {
+    align-self: flex-end;
+  }
+}
+
+.reviews .review .user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.reviews .review .user .picture {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.reviews .review .user .name {
+  color: var(--light-grayish-magenta);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.reviews .review .user .status {
+  color: var(--soft-pink);
+  font-weight: 500;
+}
+
+.reviews .review .quote {
+  color: var(--light-grayish-magenta);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  justify-self: baseline;
+  color: black;
+}
+
+.attribution a {
+  color: var(--soft-pink);
+  text-decoration: none;
+}

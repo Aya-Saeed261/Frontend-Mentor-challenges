@@ -1,0 +1,274 @@
+/* GLobal style */
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --work: hsl(15, 100%, 70%);
+  --play: hsl(195, 74%, 62%);
+  --study: hsl(348, 100%, 68%);
+  --exercise: hsl(145, 58%, 55%);
+  --social: hsl(264, 64%, 52%);
+  --self-care: hsl(43, 84%, 65%);
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Typography */
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.card .title {
+  font-size: 18px;
+}
+
+/* Main */
+body {
+  background-color: var(--very-dark-blue);
+  position: relative;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.report {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card,
+.holder,
+.main.card .user {
+  border-radius: 9px;
+}
+
+.main.card,
+.holder {
+  background-color: var(--dark-blue);
+}
+
+.main.card > *,
+.card .holder {
+  padding: 30px 20px;
+}
+
+.main.card {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.main.card .user {
+  background-color: var(--blue);
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .main.card .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.main.card .user .pic {
+  width: 50px;
+  border: 2px solid var(--pale-blue);
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .main.card .user .pic {
+    margin-bottom: 20px;
+  }
+}
+
+.main.card .user .info p:first-of-type {
+  font-size: 14px;
+  color: var(--pale-blue);
+  margin-bottom: 5px;
+}
+
+.main.card .user .info .name {
+  color: white;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  .main.card .user .info .name {
+    font-size: 36px;
+  }
+}
+
+.main.card .stats {
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .main.card .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .main.card .stats li:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.main.card .stats .stats-btn {
+  color: var(--desaturated-blue);
+  transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+  .main.card .stats .stats-btn {
+    font-size: 16px;
+  }
+}
+
+.main.card .stats .stats-btn.active {
+  color: var(--pale-blue);
+}
+
+.main.card .stats .stats-btn:not(.active):hover {
+  color: var(--pale-blue);
+}
+
+.card:not(.main) {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 45px;
+  background-position: 90% -11px;
+  background-repeat: no-repeat;
+}
+
+.work {
+  background-color: var(--work);
+  background-image: url(../images/icon-work.svg);
+  background-position: 90% -11px;
+  background-repeat: no-repeat;
+}
+
+.play {
+  background-color: var(--play);
+  background-image: url(../images/icon-play.svg);
+}
+
+.study {
+  background-color: var(--study);
+  background-image: url(../images/icon-study.svg);
+}
+
+.exercise {
+  background-color: var(--exercise);
+  background-image: url(../images/icon-exercise.svg);
+  background-position: 90% -2px !important;
+}
+
+.social {
+  background-color: var(--social);
+  background-image: url(../images/icon-social.svg);
+}
+
+.self-care {
+  background-color: var(--self-care);
+  background-image: url(../images/icon-self-care.svg);
+}
+
+.card .holder {
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.card .holder:hover {
+  background-color: hsl(235deg 51% 28%);
+}
+
+.card .holder .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.card .holder .top .title {
+  color: white;
+  font-weight: 400;
+}
+
+.card .holder .top img {
+  width: 15px;
+}
+
+@media (max-width: 767px) {
+  .card .holder .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.card .holder .content .current {
+  font-size: 36px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .card .holder .content .current {
+    margin-bottom: 10px;
+  }
+}
+
+.card .holder .content .previous {
+  color: hsl(235deg 96% 78%);
+  font-size: 12px;
+}

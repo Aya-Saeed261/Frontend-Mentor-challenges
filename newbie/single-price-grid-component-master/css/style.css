@@ -1,0 +1,137 @@
+/* GLobal style */
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+/* Typography */
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+/* Main */
+
+body {
+  min-height: 100vh;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 50px 20px;
+}
+
+.card {
+  max-width: 700px;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.top-holder {
+  padding: 30px;
+  background-color: white;
+}
+
+.top-holder .title {
+  color: var(--cyan);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.top-holder .description p {
+  color: var(--grayish-blue);
+}
+
+.top-holder .description p:first-of-type {
+  color: var(--bright-yellow);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.top-holder .description p:last-of-type {
+  line-height: 1.8;
+}
+
+.bottom-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.bottom-holder > div {
+  padding: 30px;
+  color: white;
+}
+
+.bottom-holder .subscription-info {
+  background-color: var(--cyan);
+}
+
+.bottom-holder .title {
+  font-size: 18px;
+}
+
+.bottom-holder .description .price {
+  color: hsl(179deg 65% 67%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.bottom-holder .description .price span {
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.bottom-holder .subscription-info .description p:last-of-type {
+  margin-top: 5px;
+}
+
+.bottom-holder .sign-up {
+  display: block;
+  background-color: var(--bright-yellow);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 30px;
+}
+
+.bottom-holder .why-us {
+  background-color: hsl(179deg 50% 49%);
+}
+
+.bottom-holder .why-us .description {
+  margin-top: 15px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  justify-self: baseline;
+  color: black;
+}
+
+.attribution a {
+  color: var(--cyan);
+  text-decoration: none;
+}
