@@ -18,21 +18,23 @@
 </head>
 
 <body>
-  <div class="card">
-    <p class="advice-number">Advice #<span class="number"></span></p>
-    <div class="advice-container">
-      <p class="advice"></p>
-      <div class="spinner-container hide">
-        <div class="spinner"></div>
+  <main>
+    <div class="card">
+      <h1 class="advice-number">Advice #<span class="number"></span></h1>
+      <div class="advice-container">
+        <p class="advice"></p>
+        <div class="spinner-container hide">
+          <div class="spinner"></div>
+        </div>
       </div>
+      <div class="pause-icon-holder">
+        <i class="fa-solid fa-circle-pause pause-icon"></i>
+      </div>
+      <button type="button" class="new-advice" aria-label="new advice">
+        <i class="fa-solid fa-dice-five"></i>
+      </button>
     </div>
-    <div class="pause-icon-holder">
-      <i class="fa-solid fa-circle-pause pause-icon"></i>
-    </div>
-    <button type="button" class="new-advice" aria-label="new advice">
-      <i class="fa-solid fa-dice-five"></i>
-    </button>
-  </div>
+  </main>
   <script src="js/app.js"></script>
 </body>
 
