@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://funny-pixie-9e8b6b.netlify.app/)
+- Live Site URL: [Here](https://magnificent-melomakarona-863cbd.netlify.app/)
 
 ## My process
 

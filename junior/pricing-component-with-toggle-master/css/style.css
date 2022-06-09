@@ -30,10 +30,13 @@ body {
   padding: 0 20px 40px;
   position: relative;
   background-color: var(--very-light-grayish-blue);
+  background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
 }
 
 .top-holder {
-  padding-top: 50px;
+  padding-top: 5rem;
   padding-bottom: 60px;
 }
 
@@ -91,12 +94,12 @@ body {
 }
 
 .plans {
-  max-width: 850px;
+  max-width: 1050px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   align-items: center;
-  min-height: 425px;
+  min-height: 460px;
 }
 
 @media (max-width: 836px) {
@@ -115,7 +118,7 @@ body {
   color: var(--dark-grayish-blue);
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 375px;
+  height: 436px;
 }
 
 .plan.recommended {
@@ -136,20 +139,21 @@ body {
 }
 
 .plan .title {
-  font-size: 15px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .plan .cost {
-  font-size: 29px;
+  font-size: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
-  margin: 15px 0;
+  margin: 1.5rem 0;
 }
 
 .plan .cost .number {
-  font-size: 50px;
+  font-size: 4.5rem;
 }
 
 .plan .cost .number:not(.active) {
@@ -165,7 +169,7 @@ body {
 .plan .feature {
   padding: 15px;
   border-bottom: 1px solid;
-  font-size: 12px;
+  font-size: 14px;
   border-bottom: 1px solid hsl(234deg 14% 74% / 55%);
 }
 
@@ -178,25 +182,17 @@ body {
 }
 
 .plan .learn-more {
-  width: 100%;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  font-family: inherit;
-  background-color: transparent;
-}
-
-.plan .learn-more a {
   display: block;
   padding: 12px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 2px;
   transition: 0.3s;
   border-radius: 5px;
+  border-radius: 5px;
 }
 
-.plan:not(.recommended) .learn-more a {
+.plan:not(.recommended) .learn-more {
   background: linear-gradient(
     to right,
     var(--gradient-from),
@@ -206,20 +202,20 @@ body {
   color: white;
 }
 
-.plan.recommended .learn-more a {
+.plan.recommended .learn-more {
   border: 1px solid white;
   color: var(--gradient-To);
   background-color: white;
 }
 
-.plan .learn-more a:hover {
+.plan .learn-more:hover {
   background: transparent;
 }
 
-.plan.recommended .learn-more a:hover {
+.plan.recommended .learn-more:hover {
   color: white;
 }
 
-.plan:not(.recommended) .learn-more a:hover {
+.plan:not(.recommended) .learn-more:hover {
   color: var(--gradient-To);
 }

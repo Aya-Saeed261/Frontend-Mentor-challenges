@@ -17,4 +17,5 @@ Users should be able to:
 - JS
 
 ## Link
-[Live preview](https://glittering-caramel-5108c1.netlify.app/)
+
+[Live preview](https://wondrous-chaja-f194a3.netlify.app/)

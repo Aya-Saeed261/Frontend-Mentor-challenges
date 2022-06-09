@@ -16,100 +16,104 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="report">
-      <div class="card main">
-        <div class="user">
-          <img src="images/image-jeremy.png" alt="user" class="pic">
-          <div class="info">
-            <p>Report for</p>
-            <p class="name">Jeremy Robson</p>
+  <main>
+    <div class="container">
+      <div class="report">
+        <div class="card main">
+          <div class="user">
+            <img src="images/image-jeremy.png" alt="user" class="pic">
+            <div class="info">
+              <h1 class="main-title">Report for</h1>
+              <p class="name">Jeremy Robson</p>
+            </div>
+          </div>
+          <ul class="stats">
+            <li><button type="button" class="stats-btn" data-stats="daily">Daily</button></li>
+            <li><button type="button" class="stats-btn active" data-stats="weekly">Weekly</button></li>
+            <li><button type="button" class="stats-btn" data-stats="monthly">Monthly</button></li>
+          </ul>
+        </div>
+        <div class="card work" data-card="Work">
+          <div class="holder">
+            <div class="top">
+              <h2 class="title">Work</h2>
+              <button class="options"><img src="images/icon-ellipsis.svg" alt="icon"></button>
+            </div>
+            <div class="content">
+              <p class="current">32hrs</p>
+              <p class="previous">Last Week - 36hrs</p>
+            </div>
           </div>
         </div>
-        <ul class="stats">
-          <li><button type="button" class="stats-btn" data-stats="daily">Daily</button></li>
-          <li><button type="button" class="stats-btn active" data-stats="weekly">Weekly</button></li>
-          <li><button type="button" class="stats-btn" data-stats="monthly">Monthly</button></li>
-        </ul>
-      </div>
-      <div class="card work" data-card="Work">
-        <div class="holder">
-          <div class="top">
-            <h2 class="title">Work</h2>
-            <button class="options"><img src="images/icon-ellipsis.svg" alt="icon"></button>
-          </div>
-          <div class="content">
-            <p class="current">32hrs</p>
-            <p class="previous">Last Week - 36hrs</p>
+        <div class="card play" data-card="Play">
+          <div class="holder">
+            <div class="top">
+              <h2 class="title">Play</h2>
+              <button class="options"><img src="images/icon-ellipsis.svg" alt="icon"></button>
+            </div>
+            <div class="content">
+              <p class="current">10hrs</p>
+              <p class="previous">Last Week - 8hrs</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card play" data-card="Play">
-        <div class="holder">
-          <div class="top">
-            <h2 class="title">Play</h2>
-            <button class="options"><img src="images/icon-ellipsis.svg" alt="icon"></button>
-          </div>
-          <div class="content">
-            <p class="current">10hrs</p>
-            <p class="previous">Last Week - 8hrs</p>
-          </div>
-        </div>
-      </div>
-      <div class="card study" data-card="Study">
-        <div class="holder">
-          <div class="top">
-            <h2 class="title">Study</h2>
-            <button type="button" class="options" aria-label="options icon"><img src="images/icon-ellipsis.svg"
-                alt="icon"></button>
-          </div>
-          <div class="content">
-            <p class="current">4hrs</p>
-            <p class="previous">Last Week - 7hrs</p>
+        <div class="card study" data-card="Study">
+          <div class="holder">
+            <div class="top">
+              <h2 class="title">Study</h2>
+              <button type="button" class="options" aria-label="options icon"><img src="images/icon-ellipsis.svg"
+                  alt="icon"></button>
+            </div>
+            <div class="content">
+              <p class="current">4hrs</p>
+              <p class="previous">Last Week - 7hrs</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card exercise" data-card="Exercise">
-        <div class="holder">
-          <div class="top">
-            <h2 class="title">Exercise</h2>
-            <button type="button" class="options" aria-label="options icon"><img src="images/icon-ellipsis.svg"
-                alt="icon"></button>
-          </div>
-          <div class="content">
-            <p class="current">4hrs</p>
-            <p class="previous">Last Week - 5hrs</p>
-          </div>
-        </div>
-      </div>
-      <div class="card social" data-card="Social">
-        <div class="holder">
-          <div class="top">
-            <h2 class="title">Social</h2>
-            <button type="button" class="options" aria-label="options icon"><img src="images/icon-ellipsis.svg"
-                alt="icon"></button>
-          </div>
-          <div class="content">
-            <p class="current">5hrs</p>
-            <p class="previous">Last Week - 10hrs</p>
+        <div class="card exercise" data-card="Exercise">
+          <div class="holder">
+            <div class="top">
+              <h2 class="title">Exercise</h2>
+              <button type="button" class="options" aria-label="options icon"><img src="images/icon-ellipsis.svg"
+                  alt="icon"></button>
+            </div>
+            <div class="content">
+              <p class="current">4hrs</p>
+              <p class="previous">Last Week - 5hrs</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card self-care" data-card="Self Care">
-        <div class="holder">
-          <div class="top">
-            <h2 class="title">Self Care</h2>
-            <button type="button" class="options" aria-label="options icon"><img src="images/icon-ellipsis.svg"
-                alt="icon"></button>
+        <div class="card social" data-card="Social">
+          <div class="holder">
+            <div class="top">
+              <h2 class="title">Social</h2>
+              <button type="button" class="options" aria-label="options icon"><img src="images/icon-ellipsis.svg"
+                  alt="icon"></button>
+            </div>
+            <div class="content">
+              <p class="current">5hrs</p>
+              <p class="previous">Last Week - 10hrs</p>
+            </div>
           </div>
-          <div class="content">
-            <p class="current">2hrs</p>
-            <p class="previous">Last Week - 2hrs</p>
+        </div>
+        <div class="card self-care" data-card="Self Care">
+          <div class="holder">
+            <div class="top">
+              <h2 class="title">Self Care</h2>
+              <button type="button" class="options" aria-label="options icon"><img src="images/icon-ellipsis.svg"
+                  alt="icon"></button>
+            </div>
+            <div class="content">
+              <p class="current">2hrs</p>
+              <p class="previous">Last Week - 2hrs</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
+
+  <!-- Script -->
   <script src="js/app.js"></script>
 </body>
 

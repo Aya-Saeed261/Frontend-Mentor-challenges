@@ -92,7 +92,7 @@ button {
   }
 }
 
-.main-header .content .try-it a {
+.main-header .content .try-it {
   border-radius: 25px;
   color: var(--pink);
   border: 1px solid var(--pink);
@@ -102,12 +102,12 @@ button {
 }
 
 @media (max-width: 767px) {
-  .main-header .content .try-it a {
+  .main-header .content .try-it {
     font-size: 12px;
   }
 }
 
-.main-header .content .try-it a:hover {
+.main-header .content .try-it:hover {
   color: var(--light-pink);
   border: 1px solid var(--light-pink);
 }
@@ -159,7 +159,7 @@ button {
   }
 }
 
-.get-started-btn a {
+.get-started-btn {
   background-color: var(--pink);
   color: var(--very-pale-blue);
   padding: 1.5em 5em;
@@ -169,21 +169,23 @@ button {
   letter-spacing: 1px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: 0.3s;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 767px) {
-  .get-started-btn a {
+  .get-started-btn {
     font-size: 14px;
     padding: 1em 3em;
   }
 }
 
-.get-started-btn a:hover {
+.get-started-btn:hover {
   background-color: var(--light-pink);
 }
 
 .landing .main-hero {
-  width: 80%;
   margin: 6rem auto 5rem;
 }
 

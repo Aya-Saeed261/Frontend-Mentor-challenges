@@ -23,13 +23,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  display: block;
-}
-
 /* Typography */
 body {
   font-size: 18px;
@@ -41,7 +34,7 @@ body {
 
 h1,
 header,
-button,
+.btn,
 .landing .main-content .content .announcement,
 .landing .main-content .content .holder .description {
   font-family: "Barlow Condensed", sans-serif;
@@ -180,12 +173,12 @@ button,
   color: var(--very-dark-blue);
 }
 
-.landing .main-header .header-menu .login-btn .link {
+.landing .main-header .header-menu .login-btn {
   color: var(--grayish-blue);
 }
 
 @media (max-width: 991px) {
-  .landing .main-header .header-menu .login-btn .link {
+  .landing .main-header .header-menu .login-btn {
     font-size: 20px;
     padding-top: 1.5rem;
     width: fit-content;
@@ -194,7 +187,7 @@ button,
 }
 
 .landing .main-header .header-menu .main-nav .nav-list .nav-link,
-.landing .main-header .header-menu .login-btn .link {
+.landing .main-header .header-menu .login-btn {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
@@ -204,13 +197,13 @@ button,
 
 @media (max-width: 991px) {
   .landing .main-header .header-menu .main-nav .nav-list .nav-link,
-  .landing .main-header .header-menu .login-btn .link {
+  .landing .main-header .header-menu .login-btn {
     font-size: 20px;
   }
 }
 
 .landing .main-header .header-menu .main-nav .nav-list .nav-link:hover,
-.landing .main-header .header-menu .login-btn .link:hover {
+.landing .main-header .header-menu .login-btn:hover {
   border-bottom: 1px solid currentColor;
 }
 
@@ -305,7 +298,7 @@ button,
   }
 }
 
-.landing .main-content .content .holder .schedule-btn .link {
+.landing .main-content .content .holder .schedule-btn {
   background-color: var(--red);
   color: var(--light-grayish-blue);
   font-weight: bold;
@@ -316,7 +309,7 @@ button,
   transition: 0.3s;
 }
 
-.landing .main-content .content .holder .schedule-btn .link:hover {
+.landing .main-content .content .holder .schedule-btn:hover {
   opacity: 70%;
 }
 

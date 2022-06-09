@@ -20,7 +20,7 @@ body {
 }
 
 /* Main */
-body {
+main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  body {
+  main {
     background-size: 90% auto;
   }
 }
