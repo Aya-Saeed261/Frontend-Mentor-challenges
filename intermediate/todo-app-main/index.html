@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Main style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Todo app</title>
+  </style>
+</head>
+
+<body class="dark-theme">
+  <main>
+    <div class="container">
+      <div>
+        <div class="top-holder">
+          <h1 class="main-title">Todo</h1>
+          <button class="theme-btn change-to-light" data-theme="light" aria-label="change to light theme button">
+            <img src="images/icon-sun.svg" alt="icon">
+          </button>
+          <button class="theme-btn change-to-dark" data-theme="dark" aria-label="change to dark theme button">
+            <img src="images/icon-moon.svg" alt="icon">
+          </button>
+        </div>
+        <form action="#" class="create-item">
+          <input type="checkbox" disabled aria-label="disabled checkbox">
+          <input type="text" name="new-item" class="new-item" aria-label="enter a new todo"
+            placeholder="Create a new todo...">
+        </form>
+        <div class="todo-holder">
+          <ul class="todo-list">
+          </ul>
+          <div class="settings">
+            <div class="items-left"><span class="number">0</span> items left</div>
+            <ul class="filter-btns show-in-desktop">
+              <li><button class="filter-btn active" data-filter="all">All</button></li>
+              <li><button class="filter-btn" data-filter="active">Active</button></li>
+              <li><button class="filter-btn" data-filter="completed">Completed</button></li>
+            </ul>
+            <button class="clear-completed">Clear Completed</button>
+          </div>
+        </div>
+        <ul class="filter-btns show-in-mobile">
+          <li><button class="filter-btn active" data-filter="all">All</button></li>
+          <li><button class="filter-btn" data-filter="active">Active</button></li>
+          <li><button class="filter-btn" data-filter="completed">Completed</button></li>
+        </ul>
+      </div>
+      <p class="note">Drag and drop to reorder list</p>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script id="DragDropTouch" src="js/DragDropTouch.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
