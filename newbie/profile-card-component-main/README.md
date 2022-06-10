@@ -14,4 +14,5 @@ Users should be able to:
 - CSS
 
 ## Link
-[Live preview](https://gilded-brigadeiros-e9c813.netlify.app/)
+
+[Live preview](https://whimsical-rabanadas-945e0e.netlify.app/)

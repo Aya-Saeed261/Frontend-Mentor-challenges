@@ -146,6 +146,7 @@ body {
   text-align: center;
   justify-self: baseline;
   color: var(--white);
+  padding: 10px;
 }
 
 .attribution a {

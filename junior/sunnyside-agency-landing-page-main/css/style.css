@@ -76,7 +76,7 @@ h2,
 
 /* Start landing */
 .landing {
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
   background-position: bottom;
 }
@@ -93,13 +93,19 @@ h2,
   }
 }
 
-.landing .main-header .container {
+.landing .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 2.5rem 2rem;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .landing .main-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -110,6 +116,7 @@ h2,
     left: 15px;
     background-color: white;
     border-radius: 4px 0 4px 4px;
+    z-index: 10;
   }
 
   .landing .main-header .navbar::before {
@@ -145,7 +152,7 @@ h2,
 
 .landing .main-header .navbar ul li a {
   color: var(--white);
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   transition: 0.3s;
   border-radius: 25px;
   font-size: 16px;
@@ -212,18 +219,27 @@ h2,
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 8px;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 3.5rem;
   margin-top: 70px;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
   .landing .main-content .main-title {
-    font-size: 30px;
-    margin-bottom: 100px;
+    font-size: 2.5rem;
+    margin-top: 3rem;
   }
 }
+
+.landing .main-content .arrow-down-icon {
+  transform: translateY(38%);
+}
+
+@media (max-width: 767px) {
+  .landing .main-content .arrow-down-icon {
+    transform: scale(0.8) translateY(25%);
+  }
+}
+
 /* End landing */
 
 /* Start about */
@@ -249,12 +265,14 @@ h2,
   }
 
   .about .box {
-    height: 75vh;
+    height: 65vh;
   }
 }
 
 .about .box .image-holder {
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -295,21 +313,48 @@ h2,
 }
 
 @media (max-width: 767px) {
+  .about .box .info {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
   .about .box .info .holder {
     text-align: center;
   }
 }
 
 .about .box .info .title {
+  font-size: 2.5rem;
   font-weight: 900;
   color: var(--very-dark-desaturated-blue);
 }
 
+@media (max-width: 767px) {
+  .about .box .info .title {
+    font-size: 2rem;
+  }
+}
+
 .about .box .info .description {
-  margin: 35px 0;
   color: var(--dark-grayish-blue);
   font-size: 16px;
   line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .about .box .info .description {
+    padding-right: 3.5rem;
+    margin: 35px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .box .info .description {
+    margin: 1.5rem 0;
+    font-size: 14px;
+  }
 }
 
 .about .box .info .learn-more {
@@ -319,6 +364,12 @@ h2,
   position: relative;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+@media (max-width: 767px) {
+  .about .box .info .learn-more {
+    font-size: 14px;
+  }
 }
 
 .about .box .info .learn-more::after {
@@ -369,7 +420,7 @@ h2,
 
 .services .box {
   padding: 50px 30px;
-  height: 80vh;
+  height: 70vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -409,7 +460,7 @@ h2,
 
 @media (min-width: 992px) {
   .services .box .text-holder {
-    width: 70%;
+    width: 55%;
   }
 }
 
@@ -434,9 +485,8 @@ h2,
 
 /* Start testimonials */
 .testimonials {
-  min-height: 100vh;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   text-align: center;
 }
 
@@ -444,6 +494,12 @@ h2,
   .testimonials {
     display: flex;
     align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials {
+    padding: 4rem 1rem 6rem;
   }
 }
 
@@ -472,8 +528,9 @@ h2,
 
 @media (max-width: 767px) {
   .testimonials .title {
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 60px;
+    letter-spacing: 4px;
   }
 }
 
@@ -540,17 +597,21 @@ h2,
 
 /* Start footer */
 .main-footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 4rem;
+  padding-bottom: 4.5rem;
   background-color: hsl(167, 43%, 64%);
   text-align: center;
+}
+
+.main-footer .logo {
+  width: 160px;
 }
 
 .main-footer .nav-links {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 1.5rem;
+  margin-bottom: 3.8rem;
 }
 
 .main-footer .nav-links li {
@@ -571,13 +632,14 @@ h2,
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 1.8rem;
 }
 
 .main-footer .social-links .icon {
   color: var(--graphic-design-text);
   transition: 0.5s;
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
 .main-footer .social-links .icon:hover {

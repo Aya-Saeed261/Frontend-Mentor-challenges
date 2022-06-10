@@ -23,7 +23,7 @@ body {
 
 /* Main */
 
-body {
+main {
   background-color: var(--light-grayish-blue);
   min-height: 100vh;
   display: flex;
@@ -38,18 +38,7 @@ body {
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 12px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 700px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 900px;
-  }
+  max-width: 720px;
 }
 
 @media (max-width: 767px) {
@@ -59,8 +48,9 @@ body {
 }
 
 .drawer {
-  width: 35%;
+  width: 38%;
   object-fit: cover;
+  object-position: left;
   border-radius: 12px 0 0 12px;
 }
 

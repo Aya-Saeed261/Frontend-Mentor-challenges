@@ -14,4 +14,5 @@ Users should be able to:
 - CSS
 
 ## Link
-[Live preview](https://mellifluous-sundae-2b1958.netlify.app/)
+
+[Live preview](https://celadon-semolina-93743f.netlify.app/)

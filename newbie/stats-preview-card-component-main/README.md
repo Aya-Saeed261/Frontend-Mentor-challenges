@@ -13,6 +13,6 @@ Users should be able to:
 - HTML
 - CSS
 
-
 ## Link
-[Live preview](https://transcendent-kelpie-553f13.netlify.app/)
+
+[Live preview](https://symphonious-empanada-4f864d.netlify.app/)

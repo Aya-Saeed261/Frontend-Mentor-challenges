@@ -15,4 +15,5 @@ Users should be able to:
 - CSS
 
 ## Link
-[Live preview](https://charming-seahorse-7c614e.netlify.app/)
+
+[Live preview](https://strong-sherbet-1ce960.netlify.app/)

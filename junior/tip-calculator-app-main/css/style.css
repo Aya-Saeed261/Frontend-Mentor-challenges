@@ -15,7 +15,8 @@
   --white: hsl(0, 0%, 100%);
 }
 
-label {
+label,
+.tip-title {
   display: block;
   color: var(--very-dark-cyan);
   margin-bottom: 5px;
@@ -62,7 +63,7 @@ body {
   text-align: center;
   letter-spacing: 10px;
   color: var(--very-dark-cyan);
-  margin-bottom: 30px;
+  margin-bottom: 5rem;
 }
 
 .container {

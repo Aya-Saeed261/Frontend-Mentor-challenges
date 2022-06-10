@@ -47,6 +47,7 @@ body {
   margin-right: auto;
   padding: 20px 15px;
   color: white;
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -55,15 +56,15 @@ body {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .container {
     width: 970px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container {
-    width: 1170px;
+    width: 1350px;
   }
 }
 
@@ -79,7 +80,6 @@ body {
 
 .content {
   display: flex;
-  align-items: center;
 }
 
 @media (max-width: 991px) {
@@ -104,12 +104,13 @@ body {
 
 @media (min-width: 992px) {
   .text-holder {
-    padding: 50px;
+    padding: 50px 20px 50px 50px;
   }
 }
 
 .title {
   font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 991px) {
@@ -121,6 +122,7 @@ body {
 .description {
   margin: 20px 0 30px;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 .register-btn {
@@ -128,7 +130,7 @@ body {
   text-decoration: none;
   color: var(--violet);
   background-color: white;
-  padding: 10px 40px;
+  padding: 0.8rem 3.5rem;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
@@ -161,32 +163,21 @@ body {
   }
 }
 
-.social-links i {
+.social-links .link {
   border: 1px solid white;
-  width: 33px;
-  height: 33px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.social-links i:hover {
-  border-color: var(--soft-magenta);
-  color: var(--soft-magenta);
-}
-
-.attribution {
-  padding: 10px;
-  font-size: 12px;
-  text-align: center;
-  justify-self: baseline;
+  text-decoration: none;
   color: white;
 }
 
-.attribution a {
+.social-links .link:hover {
+  border-color: var(--soft-magenta);
   color: var(--soft-magenta);
-  text-decoration: none;
 }

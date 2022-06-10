@@ -18,4 +18,5 @@ Users should be able to:
 - JS
 
 ## Link
-[Live preview](https://glistening-mousse-9c059b.netlify.app/)
+
+[Live preview](https://effulgent-cucurucho-638ba6.netlify.app/)

@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://jade-mandazi-ba0a9f.netlify.app/)
+- Live Site URL: [Here](https://elegant-salamander-f8c624.netlify.app/)
 
 ## My process
 

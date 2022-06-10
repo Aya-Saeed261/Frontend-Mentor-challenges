@@ -19,4 +19,5 @@ Users should be able to:
 - JS
 
 ## Link
-[Live preview](https://boisterous-salmiakki-47ba75.netlify.app/)
+
+[Live preview](https://astounding-kringle-20c872.netlify.app/)

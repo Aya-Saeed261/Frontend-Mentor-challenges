@@ -18,59 +18,60 @@
 </head>
 
 <body>
-  <div class="holder">
-    <h1 class="main-title">
-      <div>spli</div>
-      <div>tter</div>
-    </h1>
-    <div class="container">
-      <form class="inputs">
-        <div class="bill-holder">
-          <label for="bill">Bill</label>
-          <div>
-            <i class="fa-solid fa-dollar-sign"></i>
-            <input type="text" name="bill" id="bill" placeholder="0" aria-label="bill">
+  <main>
+    <div class="holder">
+      <h1 class="main-title">spli<br>tter</h1>
+      <div class="container">
+        <form class="inputs">
+          <div class="bill-holder">
+            <label for="bill">Bill</label>
+            <div>
+              <i class="fa-solid fa-dollar-sign"></i>
+              <input type="text" name="bill" id="bill" placeholder="0" aria-label="bill">
+            </div>
           </div>
-        </div>
-        <div class="tip-holder">
-          <label for="tip">Select Tip %</label>
-          <div class="tip-amounts">
-            <div class="tip-value" data-tip="5">5%</div>
-            <div class="tip-value" data-tip="10">10%</div>
-            <div class="tip-value" data-tip="15">15%</div>
-            <div class="tip-value" data-tip="25">25%</div>
-            <div class="tip-value" data-tip="50">50%</div>
-            <input type="text" id="custom-tip" placeholder="Custom" aria-label="tip">
+          <div class="tip-holder">
+            <p class="tip-title">Select Tip %</p>
+            <div class="tip-amounts">
+              <div class="tip-value" data-tip="5">5%</div>
+              <div class="tip-value" data-tip="10">10%</div>
+              <div class="tip-value" data-tip="15">15%</div>
+              <div class="tip-value" data-tip="25">25%</div>
+              <div class="tip-value" data-tip="50">50%</div>
+              <input type="text" id="custom-tip" placeholder="Custom" aria-label="tip">
+            </div>
           </div>
-        </div>
-        <div class="people-number-holder">
-          <label for="people-number-input">Number of People</label>
-          <p class="changes"></p>
-          <div>
-            <i class="fa-solid fa-user"></i>
-            <input type="text" name="people-number" id="people-number-input" placeholder="0">
+          <div class="people-number-holder">
+            <label for="people-number-input">Number of People</label>
+            <p class="changes"></p>
+            <div>
+              <i class="fa-solid fa-user"></i>
+              <input type="text" name="people-number" id="people-number-input" placeholder="0">
+            </div>
           </div>
-        </div>
-      </form>
-      <div class="result">
-        <div class="tip-amount-result">
-          <div class="titles">
-            <p>Tip Amount</p>
-            <p>/ person</p>
+        </form>
+        <div class="result">
+          <div class="tip-amount-result">
+            <div class="titles">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <div class="value">$0.00</div>
           </div>
-          <div class="value">$0.00</div>
-        </div>
-        <div class="total-result">
-          <div class="titles">
-            <p>Total</p>
-            <p>/ person</p>
+          <div class="total-result">
+            <div class="titles">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <div class="value">$0.00</div>
           </div>
-          <div class="value">$0.00</div>
+          <button class="reset no-changes">Reset</button>
         </div>
-        <button class="reset no-changes">Reset</button>
       </div>
     </div>
-  </div>
+  </main>
+
+  <!-- Script -->
   <script src="js/app.js"></script>
 </body>
 

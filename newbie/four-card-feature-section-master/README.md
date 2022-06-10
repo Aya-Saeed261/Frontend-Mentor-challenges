@@ -14,4 +14,5 @@ Users should be able to:
 - CSS
 
 ## Link
-[Live preview](https://chic-swan-c8625b.netlify.app/)
+
+[Live preview](https://fantastic-sunburst-64633d.netlify.app/)

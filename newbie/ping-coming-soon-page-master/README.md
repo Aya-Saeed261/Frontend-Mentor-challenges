@@ -20,4 +20,5 @@ Users should be able to:
 - JS
 
 ## Link
-[Live preview](https://glittering-mooncake-307927.netlify.app/)
+
+[Live preview](https://relaxed-bublanina-ecffe8.netlify.app/)

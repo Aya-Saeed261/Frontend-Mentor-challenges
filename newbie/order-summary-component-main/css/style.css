@@ -179,6 +179,7 @@ body {
   text-align: center;
   justify-self: baseline;
   color: var(--White);
+  padding: 10px;
 }
 
 .attribution a {

@@ -16,4 +16,5 @@ Users should be able to:
 - JS
 
 ## Link
-[Live preview](https://dynamic-ganache-0cac24.netlify.app/)
+
+[Live preview](https://regal-cheesecake-b51310.netlify.app/)

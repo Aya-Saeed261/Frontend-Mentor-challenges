@@ -19,4 +19,5 @@ Users should be able to:
 - JS
 
 ## Link
-[Live preview](https://radiant-biscochitos-e5e897.netlify.app/)
+
+[Live preview](https://preeminent-semifreddo-e811a7.netlify.app/)

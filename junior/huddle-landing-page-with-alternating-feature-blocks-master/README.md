@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://majestic-yeot-c592ae.netlify.app/)
+- Live Site URL: [Here](https://sparkly-kitsune-7ce35f.netlify.app/)
 
 ## My process
 
