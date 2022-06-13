@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Map -->
+  <link rel="stylesheet" href="css/leaflet.css">
+  <!-- Main style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+
+<body>
+  <main class="content">
+    <div class="top-content-holder">
+      <h1 class="main-title">IP Address Tracker</h1>
+      <form action="#" class="IP-form">
+        <div class="input-holder">
+          <input type="text" name="IP input" class="IP-input" aria-label="IP input"
+            placeholder="Search for any IP address or domain" aria-placeholder="Search for any IP address or domain">
+          <p class="fail-msg">Please enter a valid IP address!</p>
+        </div>
+        <button type="submit" class="search" aria-label="search button">
+          <img src="images/icon-arrow.svg" alt="icon"></button>
+      </form>
+      <div class="results">
+        <div class="holder">
+          <h2 class="title">IP Address</h2>
+          <p class="IP-address value"></p>
+        </div>
+        <div class="holder">
+          <h2 class="title">Location</h2>
+          <p class="location value"></p>
+        </div>
+        <div class="holder">
+          <h2 class="title">Timezone</h2>
+          <p class="timezone value"></p>
+        </div>
+        <div class="holder">
+          <h2 class="title">ISP</h2>
+          <p class="isp value"></p>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </main>
+
+  <!-- Script -->
+  <!-- Main JS -->
+  <script src="js/app.js"></script>
+  <!-- Map -->
+  <script src="js/leaflet.js"></script>
+</body>
+
+</html>
