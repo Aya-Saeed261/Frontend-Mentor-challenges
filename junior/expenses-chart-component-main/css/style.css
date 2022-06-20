@@ -38,8 +38,13 @@ body {
 }
 
 .container {
-  max-width: 800px;
   width: 600px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
 }
 
 .container > * {
