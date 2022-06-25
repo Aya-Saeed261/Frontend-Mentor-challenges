@@ -1,0 +1,311 @@
+/* Themes */
+.theme-0 {
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  --del-reset-background: hsl(225, 21%, 49%);
+  --del-reset-shadow: hsl(224, 28%, 35%);
+  --del-reset-hover-bg: hsl(225deg 62% 73%);
+  --solve-slider-background: hsl(6, 63%, 50%);
+  --solve-slider-shadow: hsl(6, 70%, 34%);
+  --solve-slider-hover-bg: hsl(6deg 98% 67%);
+  --number-operation-background: hsl(30, 25%, 89%);
+  --number-operation-shadow: hsl(28, 16%, 65%);
+  --number-operation-text: hsl(221, 14%, 31%);
+  --number-operation-hover-bg: hsl(0, 0%, 100%);
+  --top-holder-text: hsl(0, 0%, 100%);
+  --del-reset-text: hsl(0, 0%, 100%);
+  --equal-sign: hsl(0, 0%, 100%);
+}
+
+.theme-1 {
+  --main-background: hsl(0, 0%, 90%);
+  --toggle-keypad-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+  --del-reset-background: hsl(185, 42%, 37%);
+  --del-reset-shadow: hsl(185, 58%, 25%);
+  --del-reset-hover-bg: hsl(185deg 40% 52%);
+  --solve-slider-background: hsl(25, 98%, 40%);
+  --solve-slider-shadow: hsl(25, 99%, 27%);
+  --solve-slider-hover-bg: hsl(25deg 78% 57%);
+  --number-operation-background: hsl(45, 7%, 89%);
+  --number-operation-shadow: hsl(35, 11%, 61%);
+  --number-operation-text: hsl(60, 10%, 19%);
+  --number-operation-hover-bg: hsl(0, 0%, 100%);
+  --top-holder-text: hsl(60, 10%, 19%);
+  --del-reset-text: hsl(0, 0%, 100%);
+  --equal-sign: hsl(0, 0%, 100%);
+}
+
+.theme-2 {
+  --main-background: hsl(268, 75%, 9%);
+  --toggle-keypad-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(268, 71%, 12%);
+  --del-reset-background: hsl(281, 89%, 26%);
+  --del-reset-shadow: hsl(285, 91%, 52%);
+  --del-reset-hover-bg: hsl(281deg 86% 41%);
+  --solve-slider-background: hsl(176, 100%, 44%);
+  --solve-slider-shadow: hsl(176, 100%, 44%);
+  --solve-slider-hover-bg: hsl(176deg 100% 76%);
+  --number-operation-background: hsl(268, 47%, 21%);
+  --number-operation-shadow: hsl(290, 70%, 36%);
+  --number-operation-text: hsl(52, 100%, 62%);
+  --number-operation-hover-bg: hsl(268deg 56% 42%);
+  --top-holder-text: hsl(52, 100%, 62%);
+  --del-reset-text: hsl(0, 0%, 100%);
+  --equal-sign: hsl(198, 20%, 13%);
+}
+
+/* GLobal style */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.title,
+.reset,
+.delete {
+  text-transform: uppercase;
+}
+
+/* Typography */
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+/* Layout */
+body {
+  background-color: var(--main-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+main {
+  width: 500px;
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+}
+
+.top-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.top-holder,
+.result {
+  color: var(--top-holder-text);
+}
+
+.theme-holder {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.theme-holder .title {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  font-size: 12px;
+  margin-bottom: 0.2rem;
+}
+
+.toggle-btn {
+  background-color: var(--toggle-keypad-background);
+  border-radius: 10px;
+  width: 69px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.toggle-btn .slider {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--solve-slider-background);
+  transition: 0.3s;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+}
+
+.toggle-btn:hover .slider,
+.equal-sign:hover {
+  background-color: var(--solve-slider-hover-bg);
+}
+
+.toggle-btn [type="radio"] {
+  -webkit-appearance: none;
+  height: 23px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.toggle-btn #theme-one {
+  border-radius: 10px 0 0 10px;
+}
+
+.toggle-btn #theme-three {
+  border-radius: 0 10px 10px 0;
+}
+
+.toggle-btn #theme-one:checked ~ .slider {
+  left: 4px;
+}
+
+.toggle-btn #theme-two:checked ~ .slider {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toggle-btn #theme-three:checked ~ .slider {
+  left: calc(100% - 4px);
+  transform: translateX(-100%);
+}
+
+.result {
+  background-color: var(--screen-background);
+  text-align: end;
+  font-size: 3rem;
+  height: 109px;
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .result {
+    font-size: 2.5rem;
+    height: 88px;
+  }
+}
+
+.result,
+.keys {
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .result,
+  .keys {
+    padding: 1.5rem;
+  }
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 52px);
+  background-color: var(--toggle-keypad-background);
+  gap: 1.7rem 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .keys {
+    gap: 1rem 0.7rem;
+    grid-template-rows: repeat(5, 60px);
+  }
+}
+
+.keys * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  padding-top: 0.5rem;
+  transition: 0.3s;
+}
+
+.reset,
+.equal-sign {
+  grid-column: span 2;
+}
+
+.reset,
+.delete {
+  background-color: var(--del-reset-background);
+  color: var(--del-reset-text);
+  box-shadow: 0 4px 1px 0 var(--del-reset-shadow);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  .reset,
+  .delete {
+    letter-spacing: 0px;
+  }
+}
+
+.reset:hover,
+.delete:hover {
+  background-color: var(--del-reset-hover-bg);
+}
+
+.equal-sign {
+  background-color: var(--solve-slider-background);
+  box-shadow: 0 4px 1px 0 var(--solve-slider-shadow);
+  color: var(--equal-sign);
+}
+
+.keys *:not(.dif-style) {
+  font-size: 2rem;
+  color: var(--number-operation-text);
+  background-color: var(--number-operation-background);
+  box-shadow: 0 4px 1px 0 var(--number-operation-shadow);
+}
+
+.keys .operator {
+  font-size: 2.3rem;
+}
+
+@media (max-width: 767px) {
+  .keys .operator {
+    font-size: 2rem;
+  }
+}
+
+.keys *:not(.dif-style):hover {
+  background-color: var(--number-operation-hover-bg);
+}
+
+.dif-style {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .dif-style {
+    font-size: 1.2rem;
+  }
+}

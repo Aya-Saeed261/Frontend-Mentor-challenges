@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-0">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <!-- Main style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+  <main>
+    <div class="top-holder">
+      <h1 class="main-title">calc</h1>
+      <div class="theme-holder">
+        <p class="title">theme</p>
+        <div class="theme">
+          <div class="type">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+          </div>
+          <div class="toggle-btn">
+            <input type="radio" name="theme one" id="theme-one" class="theme-radio" data-theme="0" aria-checked="true"
+              aria-label="Change to theme one">
+            <input type="radio" name="theme two" id="theme-two" class="theme-radio" data-theme="1"
+              aria-label="Change to theme two">
+            <input type="radio" name="theme three" id="theme-three" class="theme-radio" data-theme="2"
+              aria-label="Change to theme three">
+            <div class="slider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calc">
+      <div class="result"></div>
+      <div class="keys">
+        <button type="button" class="key" data-key="7" aria-label="7">7</button>
+        <button type="button" class="key" data-key="8" aria-label="8">8</button>
+        <button type="button" class="key" data-key="9" aria-label="9">9</button>
+        <button type="button" class="delete dif-style" aria-label="delete">del</button>
+        <button type="button" class="key" data-key="4" aria-label="4">4</button>
+        <button type="button" class="key" data-key="5" aria-label="5">5</button>
+        <button type="button" class="key" data-key="6" aria-label="6">6</button>
+        <button type="button" class="key operator" data-key="+" aria-label="addition sign">+</button>
+        <button type="button" class="key" data-key="1" aria-label="1">1</button>
+        <button type="button" class="key" data-key="2" aria-label="2">2</button>
+        <button type="button" class="key" data-key="3" aria-label="3">3</button>
+        <button type="button" class="key operator" data-key="-" aria-label="minus sign">-</button>
+        <button type="button" class="key" data-key="." aria-label=".">.</button>
+        <button type="button" class="key" data-key="0" aria-label="zero">0</button>
+        <button type="button" class="key operator" data-key="/" aria-label="divison sign">/</button>
+        <button type="button" class="key operator" data-key="*" aria-label="multiplication sign">x</button>
+        <button type="button" class="reset dif-style" aria-label="reset">reset</button>
+        <button type="button" class="equal-sign dif-style" aria-label="solve">=</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
