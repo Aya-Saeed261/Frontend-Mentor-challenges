@@ -44,7 +44,7 @@ body {
 }
 
 .card {
-  width: 700px;
+  width: 650px;
   display: flex;
   border-radius: 11px;
   overflow: hidden;
@@ -67,6 +67,7 @@ body {
 
 .image-container img {
   object-fit: cover;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -107,7 +108,7 @@ body {
 
 .title {
   color: var(--very-dark-blue);
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   line-height: 1;
@@ -124,7 +125,7 @@ body {
 .description {
   color: var(--dark-grayish-blue);
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {
