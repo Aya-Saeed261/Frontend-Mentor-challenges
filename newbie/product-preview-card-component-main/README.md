@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://zippy-capybara-9fc881.netlify.app/)
+- Solution URL: [Here](https://zippy-capybara-9fc881.netlify.app/)
 
 ## My process
 
