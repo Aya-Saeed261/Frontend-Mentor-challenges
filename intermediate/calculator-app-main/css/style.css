@@ -90,9 +90,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
   padding: 2rem 1.5rem;
+  transition: background-color 0.3s ease;
 }
 
 main {
@@ -115,6 +114,7 @@ main {
 .top-holder,
 .result {
   color: var(--top-holder-text);
+  transition: 0.3s ease;
 }
 
 .theme-holder {
@@ -147,6 +147,7 @@ main {
   display: flex;
   align-items: center;
   z-index: 1;
+  transition: background-color 0.3s ease;
 }
 
 .toggle-btn .slider {
@@ -154,7 +155,7 @@ main {
   height: 15px;
   border-radius: 50%;
   background-color: var(--solve-slider-background);
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
   position: absolute;
   top: 4px;
   left: 4px;
@@ -230,6 +231,7 @@ main {
   grid-template-rows: repeat(5, 52px);
   background-color: var(--toggle-keypad-background);
   gap: 1.7rem 1.5rem;
+  transition: background-color 0.3s ease;
 }
 
 @media (max-width: 767px) {
@@ -245,7 +247,7 @@ main {
   justify-content: center;
   border-radius: 7px;
   padding-top: 0.5rem;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .reset,
